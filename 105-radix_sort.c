@@ -1,4 +1,4 @@
-#iinclude "sort.h"
+#include "sort.h"
 #include <stdlib.h>
 
 /**
@@ -17,9 +17,8 @@ void init_bucket_count(int *bucket_count)
 /**
  * build_buckets - Allocates space for arrays to be held in `buckets`
  * @buckets: Array of arrays each containing sorted members of `array`
- * @bucket_count: Array containing amounts of members for arrays in `buckets`
+ * @bucket_count: array containing amounts of members for arrays in `buckets`
  */
-
 void build_buckets(int *bucket_count, int **buckets)
 {
 	int *bucket;
